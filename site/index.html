@@ -1,0 +1,61 @@
+<html>
+<head>
+<!--External file links.-->
+<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+<script language="javascript" type="text/javascript" src="script.js"></script>
+
+<!--HTML imports from polymer.-->
+<script src="../components/webcomponentsjs/webcomponents.js">
+</script>
+<link rel="import"
+  href="../components/font-roboto/roboto.html">
+<link rel="import" 
+  href="../components/core-toolbar/core-toolbar.html">
+<link rel="import" 
+  href="../components/core-menu/core-menu.html">
+<link rel="import" 
+  href="../components/core-item/core-item.html">
+<link rel="import" 
+  href="../components/core-header-panel/core-header-panel.html">
+<link rel="import" 
+  href="../components/core-drawer-panel/core-drawer-panel.html">
+<link rel="import" 
+  href="../components/core-icons/core-icons.html">
+<link rel="import" 
+  href="../components/paper-icon-button/paper-icon-button.html">
+<link rel="import"
+  href="../components/paper-fab/paper-fab.html">
+</head>
+
+<body>
+<core-drawer-panel id="drawerPanel">
+  <core-header-panel drawer>
+    <core-toolbar id="navHeader">
+      <span><br><br><img src="../images/logo.png" width="120" height="110"</img></span>
+    </core-toolbar>
+    <core-menu>
+	  <core-item label="Stream View"></core-item><br>
+	  <core-item label="Group View"></core-item><br>
+	  <core-item label="Settings"></core-item><br>
+	  <core-item label="Help"></core-item>
+    </core-menu>
+  </core-header-panel>
+
+  <core-header-panel main>
+    <core-toolbar id="mainHeader">
+      <paper-icon-button id="navIcon" icon="menu"></paper-icon-button>
+      <span flex></span>
+	  <paper-icon-button id="account" icon="account-circle" style="color:white;"></paper-icon-button>
+    </core-toolbar>
+    <div class="content">
+	  <div id="cards" class="cards">
+	    <button class="card"><h2>Kitchen Camera 1</h2><p>Kitchen</p></button>
+		<button class="card"><h2>Front Garden</h2><p>Garden</p></button>
+	  </div>
+    </div>
+  </core-header-panel>
+</core-drawer-panel>
+<!--Below is the floating add icon.-->
+<paper-fab id="addIcon" active="true" icon="add" width="70" height="70" onClick="popup()"></paper-fab>
+</body>
+</html>

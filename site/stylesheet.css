@@ -1,0 +1,40 @@
+body {
+  font-family: 'robotoDraft';
+}
+core-header-panel {
+  background: white;
+}
+core-toolbar {
+  background-color: #F44336;
+  height: 120px;
+}
+#navHeader {
+  background-color: #F44336;
+}
+.content {
+  font-family: 'robotoDraft';
+  padding: 50px;
+}
+/* drawer icon not needed */
+core-drawer-panel:not([narrow]) #navicon {
+  display: none;
+}
+#addIcon{
+  position: absolute; bottom: 50px; right: 50px;
+}
+#settingsIcon {
+  color: #fff;
+}
+paper-icon-button::shadow #icon {
+    width: 40px; height: 40px;
+}
+.card {
+  font-family: robotoDraft;
+  margin: 20px;
+  padding: 80px 20px;
+  border-radius: 20px;
+  background-color: #eee;
+  width: 220px;
+}
+.streamInfo {
+  display: none;
